@@ -1,0 +1,374 @@
+/* Nav Bar */
+
+.navbar{
+    position : fixed;
+    box-shadow: 0 15px 40px -20px rgb(187, 184, 245);
+    top:0;
+    left:0;
+    right:0;
+    height: 80px;
+    padding: 0 20px;
+    z-index: 1000;
+
+}
+
+.navbar .nav{
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.nav .left{
+    display: flex;
+    align-items: center;
+}
+
+.nav .left .logo{
+    display: block;
+    height: 49px;
+    margin-right: 16px;
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.left .logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar .location-div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: -1px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.location-div .other{
+    font-weight: 700;
+    color: #3d4152;
+    float: left;
+    padding-bottom: 2px;
+    border-bottom: 2px solid  grey;
+}
+
+.location-div .other:hover{
+    color:rgb(247, 115, 14);
+    border-bottom: 2px solid rgb(243, 96, 4);
+}
+
+.location-div .location{
+    display:block;
+    font-weight: 300;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: rgb(99, 99, 96);
+}
+
+.location-div .arrow-down{
+    position: absolute;
+    top: 30%;
+    right: -6%;
+    transform: translate(-50%);
+    font-size: 15px;
+    color:  rgb(78, 75, 74);
+    font-weight: 700;
+}
+
+.location-div .right{
+    position: relative;
+}
+
+.right .items{
+    display: flex;
+    align-items: center;
+    
+}
+
+.right .items li {
+    margin-right: 36px;
+    color: #3d4152;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: none;
+  }
+
+
+  .right .items .nav-item {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    position: relative;
+    height: 80px;
+    cursor: pointer;
+  }
+  .right .items .nav-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3d4152;
+    font-size: 16px;
+  }
+
+  .nav-item a:hover {
+    color: #fc8019;
+  }
+
+
+  /* Main Section    */
+.restaurants .container{    
+    max-width: 1200px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 42px;
+    top: 45px;
+    background: #fff;
+    left: 31px;
+    
+
+}
+
+.container-food-menu .food-menu{
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    overflow: hidden;
+}
+
+.food-menu-logo{
+    overflow: scroll hidden;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+  .food-menu-logo .coco :first-child{
+    padding-top: 0px;
+    
+} 
+
+.food-menu-logo .coco {
+   display: flex;
+  
+}
+
+
+.each-image:first-child{
+  padding-left: 39px;
+}
+
+
+/* Nav bar with Restaurant number */
+
+.restaurant-list{
+    display: grid;
+    padding: 0px;
+    list-style: none;
+    margin-block-end: 0px;
+    grid-template-columns: repeat(4, 1fr);
+    gap :29px;
+    padding-top: 39px;
+    margin: 32px 40px;
+    
+    
+}
+
+/* Main section main content */
+
+.restaurant-list .place-link{
+    background: #fff;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-content{
+    width: 254px;
+    position: relative;
+}
+
+.top-img{
+  background: #eef0f5;
+  width: 254px;
+  height: 160px;
+  position: relative;
+}
+
+.top-img-one{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    overflow: hidden;
+}
+
+.klsJIE{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: grid;
+    align-content: end;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    height: calc(81px);
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+   
+}
+.kMtDjj {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discount-rate{
+    text-transform: uppercase;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+
+.place-name-div{
+    margin-top: 14px;
+}
+
+.place-name-div .name{
+    font-size: 14px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.card-subtext-container{
+    display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 2px;
+    gap: 2px;
+    grid-auto-flow: column;
+    -webkit-box-pack: start;
+    justify-content: start;
+}
+
+
+.place-name-div .food-items{
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    
+}
+
+/* Footer Section */
+
+.footer{
+    padding: 0 20px;
+    z-index: 10;
+    background-color: #000;
+    min-height: 298px;
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0px;
+
+}
+
+.container-logo{
+    margin: 26px 0px 10px 15px;
+
+}
+
+.container-logo .logo-text{
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.92);
+    display: inline;
+    margin:  0px 10px 15px;
+   
+}
+.container-logo .logo-company{
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.6);
+    margin:  0px 10px 15px;
+}
+
+.one{
+    -webkit-font-smoothing: antialiased;
+    font-family: Basis_Grotesque_Pro_Bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.92);
+    margin-left: 20px ;
+}
+
+.points{
+    color: #808080;
+    font: 15px;
+    font-weight: 600;
+    width: 300px;
+    margin: 26px 0px 10px 15px;
+    
+}
+
+.footer-li{
+    padding: 10px 2px 1px 0px;
+}
+
+.points ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.footer-li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.points img {
+    border: 2px solid #808080;
+    padding: 10px;
+    margin: 30px 0px 10px 57px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .points img:hover {
+    transform: scale(1.06);
+    cursor: pointer;
+  }
+
+
