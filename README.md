@@ -1,0 +1,1 @@
+The project was created utilizing HTML and CSS. I employed standard HTML tags and implemented CSS styling to replicate the visual elements of the Swiggy website, demonstrating my competence in adhering to industry-standard practices for front-end web development.
